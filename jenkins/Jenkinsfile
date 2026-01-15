@@ -51,24 +51,18 @@ pipeline {
             }
         }
  */
-
         stage('Run Selenium Python tests') {
             steps {
                 catchError(buildResult: 'UNSTABLE', stageResult: 'UNSTABLE') {
                     sh '''
                     mkdir -p selenium_tests/reports
-                    # Run the tests inside Docker (assume tests can generate raw results, e.g., XML)
-                    docker run --rm -v $(pwd):/tests $SELENIUM_IMAGE \
-                    python -m unittest discover -s /tests/selenium_tests -p '*_test.py' -v || true
-
-                    # Generate HTML report on Jenkins host
-                    if command -v pytest-html >/dev/null 2>&1; then
-                        pytest selenium_tests --html=selenium_tests/reports/report.html --self-contained-html || true
-                    fi
+                    docker run --rm -v $WORKSPACE/selenium_tests/reports:/tests/reports selenium-tests \
+                    pytest --html=/tests/reports/report.html --self-contained-html || true
                     '''
                 }
             }
         }
+
 
     }
 
