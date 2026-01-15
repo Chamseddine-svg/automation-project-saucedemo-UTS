@@ -19,13 +19,8 @@ pipeline {
         stage('Build Docker images') {
             steps {
                 sh '''
-                # Robot Framework Docker build
                 docker build -t $ROBOT_IMAGE robot_tests
-
-                # Playwright Docker build
                 docker build -t $PLAYWRIGHT_IMAGE playwright_tests
-
-                # Selenium Docker build
                 docker build -t $SELENIUM_IMAGE selenium_tests
                 '''
             }
@@ -33,26 +28,39 @@ pipeline {
 
         stage('Run Robot Framework tests') {
             steps {
-                 sh '''
-                docker run --rm -v $(pwd):/tests robot-tests-image \
-                robot --outputdir /tests/robot_tests/reports /tests/robot_tests
-                '''
+                catchError(buildResult: 'UNSTABLE', stageResult: 'UNSTABLE') {
+                    sh '''
+                    # Ensure reports folder exists
+                    mkdir -p robot_tests/reports
+                    # Run tests, allow failures
+                    docker run --rm -v $(pwd):/tests $ROBOT_IMAGE \
+                    robot --outputdir /tests/robot_tests/reports /tests/robot_tests
+                    '''
+                }
             }
         }
 
         stage('Run Playwright tests') {
             steps {
-                sh '''
-                docker run --rm -v $WORKSPACE/playwright-tests/playwright-report:/opt/tests/playwright-report $PLAYWRIGHT_IMAGE
-                '''
+                catchError(buildResult: 'UNSTABLE', stageResult: 'UNSTABLE') {
+                    sh '''
+                    mkdir -p playwright_tests/playwright-report
+                    docker run --rm -v $(pwd):/tests $PLAYWRIGHT_IMAGE \
+                    npx playwright test --reporter=html=/tests/playwright_tests/playwright-report
+                    '''
+                }
             }
         }
 
         stage('Run Selenium Python tests') {
             steps {
-                sh '''
-                docker run --rm -v $WORKSPACE/selenium-tests/reports:/opt/tests/reports $SELENIUM_IMAGE
-                '''
+                catchError(buildResult: 'UNSTABLE', stageResult: 'UNSTABLE') {
+                    sh '''
+                    mkdir -p selenium_tests/reports
+                    docker run --rm -v $(pwd):/tests $SELENIUM_IMAGE \
+                    pytest /tests/selenium_tests --html=/tests/selenium_tests/reports/report.html --self-contained-html
+                    '''
+                }
             }
         }
     }
@@ -63,7 +71,7 @@ pipeline {
                 allowMissing: true,
                 alwaysLinkToLastBuild: true,
                 keepAll: true,
-                reportDir: 'robot-tests/reports',
+                reportDir: 'robot_tests/reports',
                 reportFiles: 'report.html',
                 reportName: 'Robot Framework Report'
             ])
@@ -72,7 +80,7 @@ pipeline {
                 allowMissing: true,
                 alwaysLinkToLastBuild: true,
                 keepAll: true,
-                reportDir: 'playwright-tests/playwright-report',
+                reportDir: 'playwright_tests/playwright-report',
                 reportFiles: 'index.html',
                 reportName: 'Playwright Report'
             ])
@@ -81,7 +89,7 @@ pipeline {
                 allowMissing: true,
                 alwaysLinkToLastBuild: true,
                 keepAll: true,
-                reportDir: 'selenium-tests/reports',
+                reportDir: 'selenium_tests/reports',
                 reportFiles: 'report.html',
                 reportName: 'Selenium Python Report'
             ])
