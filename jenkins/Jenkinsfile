@@ -20,13 +20,13 @@ pipeline {
             steps {
                 sh '''
                 # Robot Framework Docker build
-                docker build -t $ROBOT_IMAGE robot-tests
+                docker build -t $ROBOT_IMAGE robot_tests
 
                 # Playwright Docker build
-                docker build -t $PLAYWRIGHT_IMAGE playwright-tests
+                docker build -t $PLAYWRIGHT_IMAGE playwright_tests
 
                 # Selenium Docker build
-                docker build -t $SELENIUM_IMAGE selenium-tests
+                docker build -t $SELENIUM_IMAGE selenium_tests
                 '''
             }
         }
