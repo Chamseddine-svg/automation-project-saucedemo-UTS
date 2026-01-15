@@ -33,8 +33,9 @@ pipeline {
 
         stage('Run Robot Framework tests') {
             steps {
-                sh '''
-                docker run --rm -v $WORKSPACE/robot-tests/reports:/opt/tests/reports $ROBOT_IMAGE
+                 sh '''
+                docker run --rm -v $(pwd):/tests robot-tests-image \
+                robot --outputdir /tests/robot_tests/reports /tests/robot_tests
                 '''
             }
         }
