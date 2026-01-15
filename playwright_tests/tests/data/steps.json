@@ -1,0 +1,50 @@
+{
+  "config": {
+    "baseURL": "https://www.saucedemo.com",
+    "timeout": 30000
+  },
+  "credentials": {
+    "validPassword": "secret_sauce"
+  },
+  "errorMessages": {
+    "lockedUser": "Epic sadface: Sorry, this user has been locked out.",
+    "invalidCredentials": "Epic sadface: Username and password do not match any user in this service",
+    "missingUsername": "Epic sadface: Username is required",
+    "missingPassword": "Epic sadface: Password is required"
+  },
+  "filters": {
+    "nameAscending": {
+      "value": "az",
+      "label": "Name (A to Z)"
+    },
+    "nameDescending": {
+      "value": "za",
+      "label": "Name (Z to A)"
+    },
+    "priceLowHigh": {
+      "value": "lohi",
+      "label": "Price (low to high)"
+    },
+    "priceHighLow": {
+      "value": "hilo",
+      "label": "Price (high to low)"
+    }
+  },
+  "checkout": {
+    "testCustomer": {
+      "firstName": "Test",
+      "lastName": "User",
+      "postalCode": "12345"
+    },
+    "confirmationMessage": "Thank you for your order!",
+    "confirmationText": "Your order has been dispatched, and will arrive just as fast as the pony can get there!"
+  },
+  "products": {
+    "backpack": "Sauce Labs Backpack",
+    "bikeLight": "Sauce Labs Bike Light",
+    "boltTShirt": "Sauce Labs Bolt T-Shirt",
+    "fleeceJacket": "Sauce Labs Fleece Jacket",
+    "onesie": "Sauce Labs Onesie",
+    "tShirtRed": "Test.allTheThings() T-Shirt (Red)"
+  }
+}

@@ -1,0 +1,25 @@
+# Node modules
+node_modules/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Python packages
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# Image files (common formats)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.ico
+*.svg

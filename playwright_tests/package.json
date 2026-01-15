@@ -1,0 +1,44 @@
+{
+  "name": "UTopiaFinalAbirHazmi",
+  "version": "1.0.0",
+  "description": "Playwright test automation for SauceDemo with POM architecture",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "playwright test --project=Chrome",
+    "test:headed": "playwright test --project=Chrome --headed",
+    "test:ui": "playwright test --project=Chrome --ui",
+    "test:debug": "playwright test --project=Chrome --debug",
+    "test:login": "playwright test login.spec.js --project=Chrome",
+    "test:filter": "playwright test product-filter.spec.js --project=Chrome",
+    "test:checkout": "playwright test checkout-process.spec.js --project=Chrome",
+    "install:browsers": "playwright install chrome",
+    "show:report": "playwright show-report",
+    "codegen": "playwright codegen https://www.saucedemo.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hazmiabir/UTopiaFinalAbirHazmi.git"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "saucedemo",
+    "pom",
+    "e2e"
+  ],
+  "author": "Abir Hazmi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hazmiabir/UTopiaFinalAbirHazmi/issues"
+  },
+  "homepage": "https://github.com/hazmiabir/UTopiaFinalAbirHazmi#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.7"
+  },
+  "directories": {
+    "test": "tests"
+  }
+}

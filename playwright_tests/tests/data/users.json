@@ -1,0 +1,32 @@
+{
+  "standard": {
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "description": "Standard user with full access to all features"
+  },
+  "locked": {
+    "username": "locked_out_user",
+    "password": "secret_sauce",
+    "description": "User that has been locked out of the system"
+  },
+  "problem": {
+    "username": "problem_user",
+    "password": "secret_sauce",
+    "description": "User that encounters various problems (images, sorting, etc.)"
+  },
+  "performance": {
+    "username": "performance_glitch_user",
+    "password": "secret_sauce",
+    "description": "User that experiences performance issues"
+  },
+  "error": {
+    "username": "error_user",
+    "password": "secret_sauce",
+    "description": "User that encounters errors during checkout"
+  },
+  "visual": {
+    "username": "visual_user",
+    "password": "secret_sauce",
+    "description": "User for visual testing (CSS/layout issues)"
+  }
+}
