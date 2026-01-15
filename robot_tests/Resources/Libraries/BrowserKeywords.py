@@ -25,20 +25,28 @@ class BrowserKeywords:
 
     @keyword("Open Browser To URL")
     def open_browser_to_url(self, url=None):
-        """Ouvre le navigateur à l'URL spécifiée ou à l'URL de base"""
         if url is None:
             url = self.config['urls']['base_url']
-        
+
         if not self.driver:
-            self.driver = webdriver.Chrome()
-            self.driver.implicitly_wait(10)  # Attente implicite de 10 secondes
-            self.driver.maximize_window()
+            options = webdriver.ChromeOptions()
+
+            # 🔥 REQUIRED FOR DOCKER
+            options.binary_location = "/usr/bin/chromium"
+            options.add_argument("--headless=new")
+            options.add_argument("--no-sandbox")
+            options.add_argument("--disable-dev-shm-usage")
+            options.add_argument("--window-size=1920,1080")
+
+            self.driver = webdriver.Chrome(options=options)
+            self.driver.implicitly_wait(self.config['timeouts']['default'])
+
         self.driver.get(url)
-        
-        # Attendre que la page soit chargée
+
         WebDriverWait(self.driver, self.config['timeouts']['default']).until(
-            lambda d: d.execute_script('return document.readyState') == 'complete'
+            lambda d: d.execute_script("return document.readyState") == "complete"
         )
+
         print(f"✓ Navigateur ouvert à : {url}")
 
     @keyword("Close Browser")
