@@ -39,18 +39,18 @@ pipeline {
                 }
             }
         } */
-
         stage('Run Playwright tests') {
             steps {
                 catchError(buildResult: 'UNSTABLE', stageResult: 'UNSTABLE') {
                     sh '''
                     mkdir -p playwright_tests/playwright-report
                     docker run --rm $PLAYWRIGHT_IMAGE \
-                    npx playwright test --reporter=html=/tests/playwright_tests/playwright-report
+                    npx playwright test --reporter=html --output=/tests/playwright_tests/playwright-report
                     '''
                 }
             }
         }
+
 
         stage('Run Selenium Python tests') {
             steps {
