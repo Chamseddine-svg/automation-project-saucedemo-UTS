@@ -1,0 +1,27 @@
+# =============================================
+# MINIMAL ESSENTIAL DEPENDENCIES
+# =============================================
+
+# Core Testing
+pytest==7.4.3
+
+# Web Automation
+selenium==4.15.2
+webdriver-manager==4.0.1
+
+# Basic Reporting
+pytest-html==4.1.1
+pytest-metadata==3.0.0
+
+# Test Enhancements
+pytest-xdist==3.5.0           # Parallel execution
+pytest-rerunfailures==13.0    # Retry flaky tests
+pytest-timeout==2.2.0         # Prevent hanging tests
+
+# Optional but Recommended
+allure-pytest==2.13.2         # Allure reports
+pytest-sugar==0.9.7           # Better console output
+
+# Utilities
+colorama==0.4.6               # Cross-platform colors
+requests==2.31.0              # API testing capability
