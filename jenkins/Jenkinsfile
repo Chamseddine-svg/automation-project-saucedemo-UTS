@@ -26,7 +26,7 @@ pipeline {
             }
         }
 
-/*         stage('Run Robot Framework tests') {
+        stage('Run Robot Framework tests') {
             steps {
                 catchError(buildResult: 'UNSTABLE', stageResult: 'UNSTABLE') {
                     sh '''
@@ -38,8 +38,8 @@ pipeline {
                     '''
                 }
             }
-        } */
-/*         stage('Run Playwright tests') {
+        }
+        stage('Run Playwright tests') {
             steps {
                 catchError(buildResult: 'UNSTABLE', stageResult: 'UNSTABLE') {
                     sh '''
@@ -50,7 +50,7 @@ pipeline {
                 }
             }
         }
- */
+
         stage('Run Selenium Python tests') {
             steps {
                 catchError(buildResult: 'UNSTABLE', stageResult: 'UNSTABLE') {
@@ -84,14 +84,14 @@ pipeline {
                 reportName: 'Playwright Report'
             ])
 
-            publishHTML([
+           /*  publishHTML([
                 allowMissing: true,
                 alwaysLinkToLastBuild: true,
                 keepAll: true,
                 reportDir: 'selenium_tests/reports',
                 reportFiles: 'report.html',
                 reportName: 'Selenium Python Report'
-            ])
+            ]) */
         }
     }
 }
