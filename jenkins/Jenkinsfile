@@ -55,11 +55,7 @@ pipeline {
             steps {
                 catchError(buildResult: 'UNSTABLE', stageResult: 'UNSTABLE') {
                     sh '''
-                    python3 -m pip install --upgrade pip
-                    python3 -m pip install pytest pytest-html
-                    mkdir -p selenium_tests/reports
-                    docker run --rm -v $WORKSPACE/selenium_tests/reports:/tests/reports selenium-tests \
-                    pytest --html=/tests/reports/report.html --self-contained-html || true
+                    docker run --rm $SELENIUM_IMAGE
                     '''
                 }
             }
