@@ -1,16 +1,20 @@
-FROM mcr.microsoft.com/playwright:v1.41.2-jammy
+# Use official Playwright image with Node 20 + browsers
+FROM mcr.microsoft.com/playwright:v1.57.0-jammy
 
-# ---- Workspace ----
+# Set working directory
 WORKDIR /tests
 
-# ---- Copy dependency files first (Docker layer cache) ----
+# Copy dependency files first for Docker caching
 COPY package.json package-lock.json ./
 
-# ---- Install Node dependencies ----
+# Install Node dependencies (including @playwright/test)
 RUN npm ci
 
-# ---- Copy the rest of the project ----
+# Install Playwright Chrome browser
+RUN npx playwright install chrome
+
+# Copy the rest of the project
 COPY . .
 
-# ---- Default command ----
-CMD ["npx", "playwright", "test"]
+# Default command to run all tests
+CMD ["npx", "playwright", "test", "--project=Chrome"]

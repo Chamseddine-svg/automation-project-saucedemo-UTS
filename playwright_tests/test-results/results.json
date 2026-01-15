@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\playwright.config.js",
-    "rootDir": "C:/Users/tango/Documents/ab/UTopiaFinalAbirHazmi/TestPlaywright/tests/specs",
+    "configFile": "/tests/playwright.config.js",
+    "rootDir": "/tests/tests/specs",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -46,15 +46,15 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/tango/Documents/ab/UTopiaFinalAbirHazmi/TestPlaywright/test-results",
+        "outputDir": "/tests/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "metadata": {
           "actualWorkers": 1
         },
         "id": "Chrome",
         "name": "Chrome",
-        "testDir": "C:/Users/tango/Documents/ab/UTopiaFinalAbirHazmi/TestPlaywright/tests/specs",
+        "testDir": "/tests/tests/specs",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -65,7 +65,7 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.57.0",
     "workers": 1,
     "webServer": null
@@ -97,10 +97,10 @@
                   "projectName": "Chrome",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1829,
+                      "duration": 2486,
                       "errors": [],
                       "stdout": [
                         {
@@ -113,25 +113,25 @@
                           "text": "✅ Étape 2: Produit ajouté au panier - Sauce Labs Backpack\n"
                         },
                         {
-                          "text": "📸 Screenshot saved: screenshots\\checkout-product-added-to-cart.png\n"
+                          "text": "📸 Screenshot saved: screenshots/checkout-product-added-to-cart.png\n"
                         },
                         {
                           "text": "✅ Étape 3: Navigation vers le panier réussie\n"
                         },
                         {
-                          "text": "📸 Screenshot saved: screenshots\\checkout-cart-page.png\n"
+                          "text": "📸 Screenshot saved: screenshots/checkout-cart-page.png\n"
                         },
                         {
                           "text": "✅ Étape 4: Page de checkout ouverte\n"
                         },
                         {
-                          "text": "📸 Screenshot saved: screenshots\\checkout-information-page.png\n"
+                          "text": "📸 Screenshot saved: screenshots/checkout-information-page.png\n"
                         },
                         {
                           "text": "✅ Étape 5: Formulaire rempli - First Name: Test, Last Name: User, ZIP: 12345\n"
                         },
                         {
-                          "text": "📸 Screenshot saved: screenshots\\checkout-form-filled.png\n"
+                          "text": "📸 Screenshot saved: screenshots/checkout-form-filled.png\n"
                         },
                         {
                           "text": "✅ Étape 6: Bouton Continue cliqué\n"
@@ -140,7 +140,7 @@
                           "text": "✅ Étape 7: Page de récapitulatif vérifiée\n"
                         },
                         {
-                          "text": "📸 Screenshot saved: screenshots\\checkout-overview-page.png\n"
+                          "text": "📸 Screenshot saved: screenshots/checkout-overview-page.png\n"
                         },
                         {
                           "text": "✅ Étape 8: Bouton Finish cliqué - Commande finalisée\n"
@@ -149,13 +149,13 @@
                           "text": "✅ Étape 9: Message de confirmation vérifié - \"Thank you for your order!\"\n"
                         },
                         {
-                          "text": "📸 Screenshot saved: screenshots\\checkout-confirmation-page.png\n"
+                          "text": "📸 Screenshot saved: screenshots/checkout-confirmation-page.png\n"
                         },
                         {
                           "text": "✅ Étape 10: Badge du panier n'est plus visible\n"
                         },
                         {
-                          "text": "📸 Screenshot saved: screenshots\\checkout-complete-success.png\n"
+                          "text": "📸 Screenshot saved: screenshots/checkout-complete-success.png\n"
                         },
                         {
                           "text": "✅ TEST COMPLET RÉUSSI - Flux d'achat complet terminé avec succès\n"
@@ -163,13 +163,13 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-15T19:13:59.841Z",
+                      "startTime": "2026-01-15T21:39:55.667Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\checkout-process-Checkout--d0df8--purchase-flow-successfully-Chrome\\test-finished-1.png"
+                          "path": "/tests/test-results/checkout-process-Checkout--d0df8--purchase-flow-successfully-Chrome/test-finished-1.png"
                         }
                       ]
                     }
@@ -195,28 +195,28 @@
                   "projectName": "Chrome",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 706,
+                      "duration": 1257,
                       "errors": [],
                       "stdout": [
                         {
                           "text": "✅ Message d'erreur affiché pour formulaire vide\n"
                         },
                         {
-                          "text": "📸 Screenshot saved: screenshots\\checkout-error-empty-form.png\n"
+                          "text": "📸 Screenshot saved: screenshots/checkout-error-empty-form.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-15T19:14:06.408Z",
+                      "startTime": "2026-01-15T21:40:02.666Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\checkout-process-Checkout--33af1-ckout-form-fields-are-empty-Chrome\\test-finished-1.png"
+                          "path": "/tests/test-results/checkout-process-Checkout--33af1-ckout-form-fields-are-empty-Chrome/test-finished-1.png"
                         }
                       ]
                     }
@@ -242,10 +242,10 @@
                   "projectName": "Chrome",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1153,
+                      "duration": 1415,
                       "errors": [],
                       "stdout": [
                         {
@@ -255,24 +255,24 @@
                           "text": "✅ Panier nettoyé\n"
                         },
                         {
-                          "text": "📸 Screenshot saved: screenshots\\checkout-before-cancel.png\n"
+                          "text": "📸 Screenshot saved: screenshots/checkout-before-cancel.png\n"
                         },
                         {
                           "text": "✅ Annulation du checkout réussie\n"
                         },
                         {
-                          "text": "📸 Screenshot saved: screenshots\\checkout-after-cancel.png\n"
+                          "text": "📸 Screenshot saved: screenshots/checkout-after-cancel.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-15T19:14:07.159Z",
+                      "startTime": "2026-01-15T21:40:03.938Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\checkout-process-Checkout--61490-checkout-and-return-to-cart-Chrome\\test-finished-1.png"
+                          "path": "/tests/test-results/checkout-process-Checkout--61490-checkout-and-return-to-cart-Chrome/test-finished-1.png"
                         }
                       ]
                     }
@@ -298,10 +298,10 @@
                   "projectName": "Chrome",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1177,
+                      "duration": 1536,
                       "errors": [],
                       "stdout": [
                         {
@@ -314,18 +314,18 @@
                           "text": "✅ Prix total vérifié: $43.18\n"
                         },
                         {
-                          "text": "📸 Screenshot saved: screenshots\\checkout-price-verification.png\n"
+                          "text": "📸 Screenshot saved: screenshots/checkout-price-verification.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-15T19:14:08.344Z",
+                      "startTime": "2026-01-15T21:40:05.368Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\checkout-process-Checkout--7014b-lation-in-checkout-overview-Chrome\\test-finished-1.png"
+                          "path": "/tests/test-results/checkout-process-Checkout--7014b-lation-in-checkout-overview-Chrome/test-finished-1.png"
                         }
                       ]
                     }
@@ -368,25 +368,25 @@
                   "projectName": "Chrome",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7087,
+                      "duration": 2989,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "📸 Screenshot saved: screenshots\\login-success-standard-user.png\n"
+                          "text": "📸 Screenshot saved: screenshots/login-success-standard-user.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-15T19:14:09.623Z",
+                      "startTime": "2026-01-15T21:40:06.965Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-s-11632-ly-login-with-standard-user-Chrome\\test-finished-1.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-s-11632-ly-login-with-standard-user-Chrome/test-finished-1.png"
                         }
                       ]
                     }
@@ -412,30 +412,30 @@
                   "projectName": "Chrome",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1822,
+                      "duration": 4747,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "📸 Screenshot saved: screenshots\\login-error-locked-user.png\n"
+                          "text": "📸 Screenshot saved: screenshots/login-error-locked-user.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-15T19:14:16.798Z",
+                      "startTime": "2026-01-15T21:40:09.990Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-display-error-for-locked-out-user-Chrome\\test-finished-2.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-display-error-for-locked-out-user-Chrome/test-finished-2.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-display-error-for-locked-out-user-Chrome\\test-finished-1.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-display-error-for-locked-out-user-Chrome/test-finished-1.png"
                         }
                       ]
                     }
@@ -461,35 +461,35 @@
                   "projectName": "Chrome",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2196,
+                      "duration": 2118,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "📸 Screenshot saved: screenshots\\login-error-invalid-credentials.png\n"
+                          "text": "📸 Screenshot saved: screenshots/login-error-invalid-credentials.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-15T19:14:18.658Z",
+                      "startTime": "2026-01-15T21:40:14.756Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-d-eaa27-ror-for-invalid-credentials-Chrome\\test-finished-2.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-d-eaa27-ror-for-invalid-credentials-Chrome/test-finished-2.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-d-eaa27-ror-for-invalid-credentials-Chrome\\test-finished-1.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-d-eaa27-ror-for-invalid-credentials-Chrome/test-finished-3.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-d-eaa27-ror-for-invalid-credentials-Chrome\\test-finished-3.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-d-eaa27-ror-for-invalid-credentials-Chrome/test-finished-1.png"
                         }
                       ]
                     }
@@ -515,40 +515,40 @@
                   "projectName": "Chrome",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2273,
+                      "duration": 1764,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "📸 Screenshot saved: screenshots\\login-error-missing-username.png\n"
+                          "text": "📸 Screenshot saved: screenshots/login-error-missing-username.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-15T19:14:20.896Z",
+                      "startTime": "2026-01-15T21:40:16.889Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-d-3476a-or-when-username-is-missing-Chrome\\test-finished-1.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-d-3476a-or-when-username-is-missing-Chrome/test-finished-1.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-d-3476a-or-when-username-is-missing-Chrome\\test-finished-3.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-d-3476a-or-when-username-is-missing-Chrome/test-finished-3.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-d-3476a-or-when-username-is-missing-Chrome\\test-finished-4.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-d-3476a-or-when-username-is-missing-Chrome/test-finished-2.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-d-3476a-or-when-username-is-missing-Chrome\\test-finished-2.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-d-3476a-or-when-username-is-missing-Chrome/test-finished-4.png"
                         }
                       ]
                     }
@@ -574,45 +574,45 @@
                   "projectName": "Chrome",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2045,
+                      "duration": 1714,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "📸 Screenshot saved: screenshots\\login-error-missing-password.png\n"
+                          "text": "📸 Screenshot saved: screenshots/login-error-missing-password.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-15T19:14:23.210Z",
+                      "startTime": "2026-01-15T21:40:18.666Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-d-48fd5-or-when-password-is-missing-Chrome\\test-finished-1.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-d-48fd5-or-when-password-is-missing-Chrome/test-finished-1.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-d-48fd5-or-when-password-is-missing-Chrome\\test-finished-4.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-d-48fd5-or-when-password-is-missing-Chrome/test-finished-2.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-d-48fd5-or-when-password-is-missing-Chrome\\test-finished-2.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-d-48fd5-or-when-password-is-missing-Chrome/test-finished-4.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-d-48fd5-or-when-password-is-missing-Chrome\\test-finished-5.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-d-48fd5-or-when-password-is-missing-Chrome/test-finished-3.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-d-48fd5-or-when-password-is-missing-Chrome\\test-finished-3.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-d-48fd5-or-when-password-is-missing-Chrome/test-finished-5.png"
                         }
                       ]
                     }
@@ -638,53 +638,53 @@
                   "projectName": "Chrome",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4664,
+                      "duration": 2139,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "📸 Screenshot saved: screenshots\\login-error-before-dismiss.png\n"
+                          "text": "📸 Screenshot saved: screenshots/login-error-before-dismiss.png\n"
                         },
                         {
-                          "text": "📸 Screenshot saved: screenshots\\login-error-after-dismiss.png\n"
+                          "text": "📸 Screenshot saved: screenshots/login-error-after-dismiss.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-15T19:14:25.286Z",
+                      "startTime": "2026-01-15T21:40:20.392Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-allow-dismissing-error-message-Chrome\\test-finished-2.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-allow-dismissing-error-message-Chrome/test-finished-1.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-allow-dismissing-error-message-Chrome\\test-finished-5.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-allow-dismissing-error-message-Chrome/test-finished-2.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-allow-dismissing-error-message-Chrome\\test-finished-3.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-allow-dismissing-error-message-Chrome/test-finished-6.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-allow-dismissing-error-message-Chrome\\test-finished-4.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-allow-dismissing-error-message-Chrome/test-finished-4.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-allow-dismissing-error-message-Chrome\\test-finished-1.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-allow-dismissing-error-message-Chrome/test-finished-3.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-allow-dismissing-error-message-Chrome\\test-finished-6.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-allow-dismissing-error-message-Chrome/test-finished-5.png"
                         }
                       ]
                     }
@@ -710,58 +710,58 @@
                   "projectName": "Chrome",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7915,
+                      "duration": 2832,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "📸 Screenshot saved: screenshots\\before-logout.png\n"
+                          "text": "📸 Screenshot saved: screenshots/before-logout.png\n"
                         },
                         {
-                          "text": "📸 Screenshot saved: screenshots\\after-logout.png\n"
+                          "text": "📸 Screenshot saved: screenshots/after-logout.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-15T19:14:29.999Z",
+                      "startTime": "2026-01-15T21:40:22.544Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-successfully-logout-after-login-Chrome\\test-finished-7.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-successfully-logout-after-login-Chrome/test-finished-3.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-successfully-logout-after-login-Chrome\\test-finished-5.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-successfully-logout-after-login-Chrome/test-finished-2.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-successfully-logout-after-login-Chrome\\test-finished-1.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-successfully-logout-after-login-Chrome/test-finished-1.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-successfully-logout-after-login-Chrome\\test-finished-3.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-successfully-logout-after-login-Chrome/test-finished-4.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-successfully-logout-after-login-Chrome\\test-finished-4.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-successfully-logout-after-login-Chrome/test-finished-7.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-successfully-logout-after-login-Chrome\\test-finished-6.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-successfully-logout-after-login-Chrome/test-finished-5.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-successfully-logout-after-login-Chrome\\test-finished-2.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-successfully-logout-after-login-Chrome/test-finished-6.png"
                         }
                       ]
                     }
@@ -787,60 +787,60 @@
                   "projectName": "Chrome",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4655,
+                      "duration": 1869,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "📸 Screenshot saved: screenshots\\login-problem-user.png\n"
+                          "text": "📸 Screenshot saved: screenshots/login-problem-user.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-15T19:14:37.954Z",
+                      "startTime": "2026-01-15T21:40:25.392Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-handle-problem-user-login-Chrome\\test-finished-4.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-handle-problem-user-login-Chrome/test-finished-1.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-handle-problem-user-login-Chrome\\test-finished-2.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-handle-problem-user-login-Chrome/test-finished-4.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-handle-problem-user-login-Chrome\\test-finished-1.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-handle-problem-user-login-Chrome/test-finished-2.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-handle-problem-user-login-Chrome\\test-finished-3.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-handle-problem-user-login-Chrome/test-finished-5.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-handle-problem-user-login-Chrome\\test-finished-6.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-handle-problem-user-login-Chrome/test-finished-3.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-handle-problem-user-login-Chrome\\test-finished-5.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-handle-problem-user-login-Chrome/test-finished-8.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-handle-problem-user-login-Chrome\\test-finished-7.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-handle-problem-user-login-Chrome/test-finished-7.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-handle-problem-user-login-Chrome\\test-finished-8.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-handle-problem-user-login-Chrome/test-finished-6.png"
                         }
                       ]
                     }
@@ -866,68 +866,68 @@
                   "projectName": "Chrome",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2969,
+                      "duration": 1802,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "📸 Screenshot saved: screenshots\\before-page-reload.png\n"
+                          "text": "📸 Screenshot saved: screenshots/before-page-reload.png\n"
                         },
                         {
-                          "text": "📸 Screenshot saved: screenshots\\after-page-reload-cleared.png\n"
+                          "text": "📸 Screenshot saved: screenshots/after-page-reload-cleared.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-15T19:14:42.734Z",
+                      "startTime": "2026-01-15T21:40:27.281Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome\\test-finished-2.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome/test-finished-2.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome\\test-finished-9.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome/test-finished-1.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome\\test-finished-5.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome/test-finished-4.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome\\test-finished-1.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome/test-finished-5.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome\\test-finished-3.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome/test-finished-6.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome\\test-finished-4.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome/test-finished-7.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome\\test-finished-6.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome/test-finished-9.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome\\test-finished-8.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome/test-finished-3.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome\\test-finished-7.png"
+                          "path": "/tests/test-results/login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome/test-finished-8.png"
                         }
                       ]
                     }
@@ -970,10 +970,10 @@
                   "projectName": "Chrome",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 260,
+                      "duration": 133,
                       "errors": [],
                       "stdout": [
                         {
@@ -986,63 +986,63 @@
                           "text": "✅ Filtre par défaut vérifié: Name (A to Z)\n"
                         },
                         {
-                          "text": "📸 Screenshot saved: screenshots\\default-filter-name-a-to-z.png\n"
+                          "text": "📸 Screenshot saved: screenshots/default-filter-name-a-to-z.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-15T19:14:45.765Z",
+                      "startTime": "2026-01-15T21:40:29.100Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome\\test-finished-3.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome/test-finished-3.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome\\test-finished-1.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome/test-finished-5.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome\\test-finished-2.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome/test-finished-1.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome\\test-finished-5.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome/test-finished-2.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome\\test-finished-6.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome/test-finished-4.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome\\test-finished-4.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome/test-finished-7.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome\\test-finished-7.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome/test-finished-6.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome\\test-finished-10.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome/test-finished-9.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome\\test-finished-8.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome/test-finished-8.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome\\test-finished-9.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome/test-finished-10.png"
                         }
                       ]
                     }
@@ -1068,10 +1068,10 @@
                   "projectName": "Chrome",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1255,
+                      "duration": 812,
                       "errors": [],
                       "stdout": [
                         {
@@ -1081,63 +1081,63 @@
                           "text": "✅ Produits triés par prix croissant vérifiés\n"
                         },
                         {
-                          "text": "📸 Screenshot saved: screenshots\\price-low-to-high.png\n"
+                          "text": "📸 Screenshot saved: screenshots/price-low-to-high.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-15T19:14:57.307Z",
+                      "startTime": "2026-01-15T21:40:32.121Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome\\test-finished-1.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome/test-finished-1.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome\\test-finished-4.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome/test-finished-9.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome\\test-finished-2.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome/test-finished-3.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome\\test-finished-5.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome/test-finished-4.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome\\test-finished-9.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome/test-finished-2.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome\\test-finished-10.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome/test-finished-5.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome\\test-finished-3.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome/test-finished-6.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome\\test-finished-7.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome/test-finished-8.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome\\test-finished-8.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome/test-finished-10.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome\\test-finished-6.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome/test-finished-7.png"
                         }
                       ]
                     }
@@ -1163,10 +1163,10 @@
                   "projectName": "Chrome",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1286,
+                      "duration": 889,
                       "errors": [],
                       "stdout": [
                         {
@@ -1179,63 +1179,63 @@
                           "text": "✅ Dernier produit a le prix le plus bas: $7.99\n"
                         },
                         {
-                          "text": "📸 Screenshot saved: screenshots\\price-high-to-low.png\n"
+                          "text": "📸 Screenshot saved: screenshots/price-high-to-low.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-15T19:14:58.611Z",
+                      "startTime": "2026-01-15T21:40:32.951Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome\\test-finished-3.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome/test-finished-1.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome\\test-finished-2.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome/test-finished-2.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome\\test-finished-1.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome/test-finished-3.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome\\test-finished-5.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome/test-finished-4.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome\\test-finished-4.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome/test-finished-10.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome\\test-finished-7.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome/test-finished-5.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome\\test-finished-10.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome/test-finished-6.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome\\test-finished-6.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome/test-finished-7.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome\\test-finished-9.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome/test-finished-9.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome\\test-finished-8.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome/test-finished-8.png"
                         }
                       ]
                     }
@@ -1261,73 +1261,73 @@
                   "projectName": "Chrome",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1231,
+                      "duration": 801,
                       "errors": [],
                       "stdout": [
                         {
                           "text": "✅ Tri alphabétique A à Z vérifié\n"
                         },
                         {
-                          "text": "📸 Screenshot saved: screenshots\\sort-name-a-to-z.png\n"
+                          "text": "📸 Screenshot saved: screenshots/sort-name-a-to-z.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-15T19:14:59.935Z",
+                      "startTime": "2026-01-15T21:40:33.855Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome\\test-finished-3.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome/test-finished-2.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome\\test-finished-4.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome/test-finished-3.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome\\test-finished-1.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome/test-finished-4.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome\\test-finished-5.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome/test-finished-1.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome\\test-finished-2.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome/test-finished-10.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome\\test-finished-6.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome/test-finished-9.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome\\test-finished-7.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome/test-finished-5.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome\\test-finished-8.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome/test-finished-7.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome\\test-finished-9.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome/test-finished-6.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome\\test-finished-10.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome/test-finished-8.png"
                         }
                       ]
                     }
@@ -1353,73 +1353,73 @@
                   "projectName": "Chrome",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1294,
+                      "duration": 791,
                       "errors": [],
                       "stdout": [
                         {
                           "text": "✅ Tri alphabétique Z à A vérifié\n"
                         },
                         {
-                          "text": "📸 Screenshot saved: screenshots\\sort-name-z-to-a.png\n"
+                          "text": "📸 Screenshot saved: screenshots/sort-name-z-to-a.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-15T19:15:01.203Z",
+                      "startTime": "2026-01-15T21:40:34.674Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome\\test-finished-1.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome/test-finished-2.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome\\test-finished-2.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome/test-finished-3.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome\\test-finished-4.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome/test-finished-4.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome\\test-finished-3.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome/test-finished-1.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome\\test-finished-7.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome/test-finished-5.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome\\test-finished-5.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome/test-finished-6.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome\\test-finished-9.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome/test-finished-7.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome\\test-finished-10.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome/test-finished-8.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome\\test-finished-6.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome/test-finished-9.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome\\test-finished-8.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome/test-finished-10.png"
                         }
                       ]
                     }
@@ -1445,10 +1445,10 @@
                   "projectName": "Chrome",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1332,
+                      "duration": 843,
                       "errors": [],
                       "stdout": [
                         {
@@ -1458,63 +1458,63 @@
                           "text": "✅ Filtre maintenu après ajout au panier\n"
                         },
                         {
-                          "text": "📸 Screenshot saved: screenshots\\maintain-filter-after-add-to-cart.png\n"
+                          "text": "📸 Screenshot saved: screenshots/maintain-filter-after-add-to-cart.png\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-15T19:15:02.535Z",
+                      "startTime": "2026-01-15T21:40:35.479Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome\\test-finished-2.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome/test-finished-2.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome\\test-finished-3.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome/test-finished-1.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome\\test-finished-1.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome/test-finished-10.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome\\test-finished-6.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome/test-finished-3.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome\\test-finished-10.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome/test-finished-5.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome\\test-finished-5.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome/test-finished-4.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome\\test-finished-4.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome/test-finished-8.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome\\test-finished-8.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome/test-finished-6.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome\\test-finished-7.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome/test-finished-7.png"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\tango\\Documents\\ab\\UTopiaFinalAbirHazmi\\TestPlaywright\\test-results\\product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome\\test-finished-9.png"
+                          "path": "/tests/test-results/product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome/test-finished-9.png"
                         }
                       ]
                     }
@@ -1534,8 +1534,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-15T19:13:56.549Z",
-    "duration": 68267.27099999995,
+    "startTime": "2026-01-15T21:39:54.870Z",
+    "duration": 41772.425,
     "expected": 19,
     "skipped": 0,
     "unexpected": 0,

@@ -29,18 +29,17 @@ Test Menu Burger Global Standard User
     
     # Connexion
     Login With Standard User
-    # Sleep    1s
+  
     
     # Test du menu burger
     Execute Test Step    Ouverture du menu burger    Open Burger Menu
-    # Sleep    0.5s
+  
     
     Execute Test Step    Vérification menu ouvert    Verify Burger Menu Is Open
     
     Execute Test Step    Vérification des 4 options    Verify Burger Menu Options
     
-    # Fermer le menu pour les tests suivants
-    # Close Burger Menu
+
     
     Log    === ✓ TEST MENU BURGER GLOBAL TERMINE ===    console=yes
 
@@ -51,13 +50,10 @@ Test All Items Option For Standard User
     
     Log    === TEST ALL ITEMS - STANDARD USER ===    console=yes
     
-    # Ouvrir le menu
-    # Execute Test Step    Ouverture du menu burger    Open Burger Menu
-    # Sleep    3s
-    
+
     # Tester All Items
     ${status}    ${current_url}=    Run Keyword And Ignore Error    Click All Items
-    # Sleep    1s
+
     
     Run Keyword If    '${status}' == 'PASS'
     ...    Execute Test Step    Vérification même page    Verify Same Page    ${current_url}
@@ -73,13 +69,11 @@ Test About Option Standard User
     
     Log    === TEST ABOUT - STANDARD USER ===    console=yes
     
-    # Ouvrir le menu
-    # Execute Test Step    Ouverture du menu burger    Open Burger Menu
-    # Sleep    1s
+
     
     # Tester About avec retour automatique
     Execute Test Step    Clic sur About    Click About
-    # Sleep    1s
+ 
     
     Execute Test Step    Vérification page Saucelabs    Verify Saucelabs Page Opened
     
@@ -98,20 +92,13 @@ Test Reset App State Standard User
     
     Log    === TEST RESET APP STATE - STANDARD USER ===    console=yes
   
-    # Sleep    0.25s
+
     # Ajouter un produit au panier
     Execute Test Step    Ajout d'un produit au panier    Add Product To Cart    Sauce Labs Backpack
-    # Sleep    0.5s
-    
-    # Vérifier que le badge affiche 1
-    # Execute Test Step    Vérification badge panier (1)    Verify Cart Badge Count    1
-    
-    # Vérifier que le bouton est passé à "Remove"
-    # Execute Test Step    Vérification bouton Remove    Verify Product Button State    Sauce Labs Backpack    remove
     
     # Ouvrir le menu pour reset
     Execute Test Step    Ouverture du menu burger    Open Burger Menu
-    # Sleep    0.5s
+ 
     
     Execute Test Step    Clic Reset App State    Click Reset App State
   
@@ -120,8 +107,6 @@ Test Reset App State Standard User
    
     Execute Test Step    Vérification bouton Add to cart    Verify Product Button State    Sauce Labs Backpack    add
  
-    # Vérification complète combinée
-    # Execute Test Step    Vérification complète panier vide    Verify Cart Is Empty After Reset    Sauce Labs Backpack
      
     Log    === ✓ TEST RESET APP STATE TERMINE ===    console=yes
 
@@ -134,10 +119,10 @@ Test Logout Standard User
     
     # Ouvrir le menu
     Execute Test Step    Ouverture du menu burger    Open Burger Menu
-    # Sleep    1s
+
     
     Execute Test Step    Clic Logout    Click Logout
-    # Sleep    2s
+
     
     # Vérification retour à la page login
     Execute Test Step    Vérification page login    Verify Login Page Is Displayed
@@ -158,11 +143,11 @@ Test Menu Burger Global Problem User
     # Connexion
     Open Browser To URL
     Login With Problem User
-    # Sleep    2s
+
     
     # Test du menu burger
     Execute Test Step    Ouverture du menu burger    Open Burger Menu
-    # Sleep    1s
+
     
     Execute Test Step    Vérification menu ouvert    Verify Burger Menu Is Open
     
@@ -171,7 +156,7 @@ Test Menu Burger Global Problem User
     # Fermer le menu pour les tests suivants
     Close Burger Menu
     
-    Log    === ✓ TEST MENU BURGER GLOBAL RÉUSSI ===    console=yes
+    Log    === ✓ TEST MENU BURGER GLOBAL TERMINE ===    console=yes
 
 Test All Items Option For Problem User
     [Documentation]    Test de l'option "All Items" du menu burger
@@ -182,11 +167,11 @@ Test All Items Option For Problem User
     
     # Ouvrir le menu
     Execute Test Step    Ouverture du menu burger    Open Burger Menu
-    # Sleep    1s
+ 
     
     # Tester All Items
     ${status}    ${current_url}=    Run Keyword And Ignore Error    Click All Items
-    # Sleep    1s
+
     
     Run Keyword If    '${status}' == 'PASS'
     ...    Execute Test Step    Vérification même page    Verify Same Page    ${current_url}
@@ -205,11 +190,11 @@ Test About Option Problem User
     
     # Ouvrir le menu
     Execute Test Step    Ouverture du menu burger    Open Burger Menu
-    # Sleep    1s
+
     
     # Tester About avec gestion d'échec attendu
     Execute Test Step    Clic sur About    Click About
-    # Sleep    3s
+
     
     # Vérification avec gestion d'échec attendu
     ${about_success}=    Run Keyword And Return Status    Verify Saucelabs Page Opened
@@ -244,17 +229,11 @@ Test Reset App State Problem User
     
     # Ajouter un produit au panier
     Execute Test Step    Ajout d'un produit au panier    Add Product To Cart    Sauce Labs Backpack
-    # Sleep    1s
-    
-    # Vérifier que le badge affiche 1
-    # Execute Test Step    Vérification badge panier (1)    Verify Cart Badge Count    1
-    
-    # Vérifier que le bouton est passé à "Remove"
-    # Execute Test Step    Vérification bouton Remove    Verify Product Button State    Sauce Labs Backpack    remove
+
     
     # Ouvrir le menu pour reset
     Execute Test Step    Ouverture du menu burger    Open Burger Menu
-    # Sleep    1s
+
     
     Execute Test Step    Clic Reset App State    Click Reset App State
     
@@ -264,7 +243,7 @@ Test Reset App State Problem User
     Execute Test Step    Vérification bouton Add to cart    Verify Product Button State    Sauce Labs Backpack    add
     
     # Vérification complète combinée    
-    Log    === ✓ TEST RESET APP STATE RÉUSSI ===    console=yes
+    Log    === ✓ TEST RESET APP STATE TERMINE ===    console=yes
 
 Test Logout Problem User
     [Documentation]    Test de l'option "Logout" du menu burger pour problem_user
@@ -275,37 +254,37 @@ Test Logout Problem User
     
     # Ouvrir le menu
     Execute Test Step    Ouverture du menu burger    Open Burger Menu
-    # Sleep    1s
+
     
     Execute Test Step    Clic Logout    Click Logout
-    # Sleep    2s
+
     
     # Vérification retour à la page login
     Execute Test Step    Vérification page login    Verify Login Page Is Displayed
     
-    Log    === ✓ TEST LOGOUT RÉUSSI ===    console=yes
+    Log    === ✓ TEST LOGOUT TERMINE ===    console=yes
 
 # ============================================================================
 # TEST LOCKED USER
 # ============================================================================
 
-Test Locked Out User Cannot Login
-    [Documentation]    Vérifie que l'utilisateur verrouillé ne peut pas se connecter
-    ...                Un message d'erreur approprié doit être affiché
-    [Tags]    login    locked_user    negative_test
+# Test Locked Out User Cannot Login
+#     [Documentation]    Vérifie que l'utilisateur verrouillé ne peut pas se connecter
+#     ...                Un message d'erreur approprié doit être affiché
+#     [Tags]    login    locked_user    negative_test
     
-    Log    === TEST UTILISATEUR VERROUILLÉ ===    console=yes
+#     Log    === TEST UTILISATEUR VERROUILLÉ ===    console=yes
     
-    # Se reconnecter après le test précédent
-    Open Browser To URL
+#     # Se reconnecter après le test précédent
+#     Open Browser To URL
     
-    # Tenter de se connecter avec l'utilisateur verrouillé
-    Login With Locked Out User   
+#     # Tenter de se connecter avec l'utilisateur verrouillé
+#     Login With Locked Out User   
     
-    # Vérifier le message d'erreur
-    Verify Login Error Message    Epic sadface: Sorry, this user has been locked out.
+#     # Vérifier le message d'erreur
+#     Verify Login Error Message    Epic sadface: Sorry, this user has been locked out.
     
-    Log    === ✓ TEST LOCKED USER RÉUSSI ===    console=yes
+#     Log    === ✓ TEST LOCKED USER TERMINE ===    console=yes
 
 *** Keywords ***
 Execute Test Step

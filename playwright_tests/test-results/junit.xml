@@ -1,379 +1,379 @@
-<testsuites id="" name="" tests="19" failures="0" skipped="0" errors="0" time="68.26727099999995">
-<testsuite name="checkout-process.spec.js" timestamp="2026-01-15T19:13:58.315Z" hostname="Chrome" tests="4" failures="0" skipped="0" time="4.865" errors="0">
-<testcase name="Checkout Process Tests › should complete full purchase flow successfully" classname="checkout-process.spec.js" time="1.829">
+<testsuites id="" name="" tests="19" failures="0" skipped="0" errors="0" time="41.772425000000005">
+<testsuite name="checkout-process.spec.js" timestamp="2026-01-15T21:39:55.013Z" hostname="Chrome" tests="4" failures="0" skipped="0" time="6.694" errors="0">
+<testcase name="Checkout Process Tests › should complete full purchase flow successfully" classname="checkout-process.spec.js" time="2.486">
 <system-out>
 <![CDATA[Préparation des tests de checkout...
 ✅ Connexion utilisateur standard réussie
 ✅ Étape 2: Produit ajouté au panier - Sauce Labs Backpack
-📸 Screenshot saved: screenshots\checkout-product-added-to-cart.png
+📸 Screenshot saved: screenshots/checkout-product-added-to-cart.png
 ✅ Étape 3: Navigation vers le panier réussie
-📸 Screenshot saved: screenshots\checkout-cart-page.png
+📸 Screenshot saved: screenshots/checkout-cart-page.png
 ✅ Étape 4: Page de checkout ouverte
-📸 Screenshot saved: screenshots\checkout-information-page.png
+📸 Screenshot saved: screenshots/checkout-information-page.png
 ✅ Étape 5: Formulaire rempli - First Name: Test, Last Name: User, ZIP: 12345
-📸 Screenshot saved: screenshots\checkout-form-filled.png
+📸 Screenshot saved: screenshots/checkout-form-filled.png
 ✅ Étape 6: Bouton Continue cliqué
 ✅ Étape 7: Page de récapitulatif vérifiée
-📸 Screenshot saved: screenshots\checkout-overview-page.png
+📸 Screenshot saved: screenshots/checkout-overview-page.png
 ✅ Étape 8: Bouton Finish cliqué - Commande finalisée
 ✅ Étape 9: Message de confirmation vérifié - "Thank you for your order!"
-📸 Screenshot saved: screenshots\checkout-confirmation-page.png
+📸 Screenshot saved: screenshots/checkout-confirmation-page.png
 ✅ Étape 10: Badge du panier n'est plus visible
-📸 Screenshot saved: screenshots\checkout-complete-success.png
+📸 Screenshot saved: screenshots/checkout-complete-success.png
 ✅ TEST COMPLET RÉUSSI - Flux d'achat complet terminé avec succès
 
-[[ATTACHMENT|checkout-process-Checkout--d0df8--purchase-flow-successfully-Chrome\test-finished-1.png]]
+[[ATTACHMENT|checkout-process-Checkout--d0df8--purchase-flow-successfully-Chrome/test-finished-1.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Checkout Process Tests › should display error when checkout form fields are empty" classname="checkout-process.spec.js" time="0.706">
+<testcase name="Checkout Process Tests › should display error when checkout form fields are empty" classname="checkout-process.spec.js" time="1.257">
 <system-out>
 <![CDATA[✅ Message d'erreur affiché pour formulaire vide
-📸 Screenshot saved: screenshots\checkout-error-empty-form.png
+📸 Screenshot saved: screenshots/checkout-error-empty-form.png
 
-[[ATTACHMENT|checkout-process-Checkout--33af1-ckout-form-fields-are-empty-Chrome\test-finished-1.png]]
+[[ATTACHMENT|checkout-process-Checkout--33af1-ckout-form-fields-are-empty-Chrome/test-finished-1.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Checkout Process Tests › should allow user to cancel checkout and return to cart" classname="checkout-process.spec.js" time="1.153">
+<testcase name="Checkout Process Tests › should allow user to cancel checkout and return to cart" classname="checkout-process.spec.js" time="1.415">
 <system-out>
 <![CDATA[⚠️ Nettoyage du panier avant le test...
 ✅ Panier nettoyé
-📸 Screenshot saved: screenshots\checkout-before-cancel.png
+📸 Screenshot saved: screenshots/checkout-before-cancel.png
 ✅ Annulation du checkout réussie
-📸 Screenshot saved: screenshots\checkout-after-cancel.png
+📸 Screenshot saved: screenshots/checkout-after-cancel.png
 
-[[ATTACHMENT|checkout-process-Checkout--61490-checkout-and-return-to-cart-Chrome\test-finished-1.png]]
+[[ATTACHMENT|checkout-process-Checkout--61490-checkout-and-return-to-cart-Chrome/test-finished-1.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Checkout Process Tests › should verify total price calculation in checkout overview" classname="checkout-process.spec.js" time="1.177">
+<testcase name="Checkout Process Tests › should verify total price calculation in checkout overview" classname="checkout-process.spec.js" time="1.536">
 <system-out>
 <![CDATA[⚠️ Nettoyage du panier avant le test...
 ✅ Panier nettoyé
 ✅ Prix total vérifié: $43.18
-📸 Screenshot saved: screenshots\checkout-price-verification.png
+📸 Screenshot saved: screenshots/checkout-price-verification.png
 
-[[ATTACHMENT|checkout-process-Checkout--7014b-lation-in-checkout-overview-Chrome\test-finished-1.png]]
+[[ATTACHMENT|checkout-process-Checkout--7014b-lation-in-checkout-overview-Chrome/test-finished-1.png]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="login.spec.js" timestamp="2026-01-15T19:13:58.315Z" hostname="Chrome" tests="9" failures="0" skipped="0" time="35.626" errors="0">
-<testcase name="Login Tests › should successfully login with standard user" classname="login.spec.js" time="7.087">
+<testsuite name="login.spec.js" timestamp="2026-01-15T21:39:55.013Z" hostname="Chrome" tests="9" failures="0" skipped="0" time="21.974" errors="0">
+<testcase name="Login Tests › should successfully login with standard user" classname="login.spec.js" time="2.989">
 <system-out>
-<![CDATA[📸 Screenshot saved: screenshots\login-success-standard-user.png
+<![CDATA[📸 Screenshot saved: screenshots/login-success-standard-user.png
 
-[[ATTACHMENT|login-Login-Tests-should-s-11632-ly-login-with-standard-user-Chrome\test-finished-1.png]]
+[[ATTACHMENT|login-Login-Tests-should-s-11632-ly-login-with-standard-user-Chrome/test-finished-1.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Login Tests › should display error for locked out user" classname="login.spec.js" time="1.822">
+<testcase name="Login Tests › should display error for locked out user" classname="login.spec.js" time="4.747">
 <system-out>
-<![CDATA[📸 Screenshot saved: screenshots\login-error-locked-user.png
+<![CDATA[📸 Screenshot saved: screenshots/login-error-locked-user.png
 
-[[ATTACHMENT|login-Login-Tests-should-display-error-for-locked-out-user-Chrome\test-finished-2.png]]
+[[ATTACHMENT|login-Login-Tests-should-display-error-for-locked-out-user-Chrome/test-finished-2.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-display-error-for-locked-out-user-Chrome\test-finished-1.png]]
+[[ATTACHMENT|login-Login-Tests-should-display-error-for-locked-out-user-Chrome/test-finished-1.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Login Tests › should display error for invalid credentials" classname="login.spec.js" time="2.196">
+<testcase name="Login Tests › should display error for invalid credentials" classname="login.spec.js" time="2.118">
 <system-out>
-<![CDATA[📸 Screenshot saved: screenshots\login-error-invalid-credentials.png
+<![CDATA[📸 Screenshot saved: screenshots/login-error-invalid-credentials.png
 
-[[ATTACHMENT|login-Login-Tests-should-d-eaa27-ror-for-invalid-credentials-Chrome\test-finished-2.png]]
+[[ATTACHMENT|login-Login-Tests-should-d-eaa27-ror-for-invalid-credentials-Chrome/test-finished-2.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-d-eaa27-ror-for-invalid-credentials-Chrome\test-finished-1.png]]
+[[ATTACHMENT|login-Login-Tests-should-d-eaa27-ror-for-invalid-credentials-Chrome/test-finished-3.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-d-eaa27-ror-for-invalid-credentials-Chrome\test-finished-3.png]]
+[[ATTACHMENT|login-Login-Tests-should-d-eaa27-ror-for-invalid-credentials-Chrome/test-finished-1.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Login Tests › should display error when username is missing" classname="login.spec.js" time="2.273">
+<testcase name="Login Tests › should display error when username is missing" classname="login.spec.js" time="1.764">
 <system-out>
-<![CDATA[📸 Screenshot saved: screenshots\login-error-missing-username.png
+<![CDATA[📸 Screenshot saved: screenshots/login-error-missing-username.png
 
-[[ATTACHMENT|login-Login-Tests-should-d-3476a-or-when-username-is-missing-Chrome\test-finished-1.png]]
+[[ATTACHMENT|login-Login-Tests-should-d-3476a-or-when-username-is-missing-Chrome/test-finished-1.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-d-3476a-or-when-username-is-missing-Chrome\test-finished-3.png]]
+[[ATTACHMENT|login-Login-Tests-should-d-3476a-or-when-username-is-missing-Chrome/test-finished-3.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-d-3476a-or-when-username-is-missing-Chrome\test-finished-4.png]]
+[[ATTACHMENT|login-Login-Tests-should-d-3476a-or-when-username-is-missing-Chrome/test-finished-2.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-d-3476a-or-when-username-is-missing-Chrome\test-finished-2.png]]
+[[ATTACHMENT|login-Login-Tests-should-d-3476a-or-when-username-is-missing-Chrome/test-finished-4.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Login Tests › should display error when password is missing" classname="login.spec.js" time="2.045">
+<testcase name="Login Tests › should display error when password is missing" classname="login.spec.js" time="1.714">
 <system-out>
-<![CDATA[📸 Screenshot saved: screenshots\login-error-missing-password.png
+<![CDATA[📸 Screenshot saved: screenshots/login-error-missing-password.png
 
-[[ATTACHMENT|login-Login-Tests-should-d-48fd5-or-when-password-is-missing-Chrome\test-finished-1.png]]
+[[ATTACHMENT|login-Login-Tests-should-d-48fd5-or-when-password-is-missing-Chrome/test-finished-1.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-d-48fd5-or-when-password-is-missing-Chrome\test-finished-4.png]]
+[[ATTACHMENT|login-Login-Tests-should-d-48fd5-or-when-password-is-missing-Chrome/test-finished-2.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-d-48fd5-or-when-password-is-missing-Chrome\test-finished-2.png]]
+[[ATTACHMENT|login-Login-Tests-should-d-48fd5-or-when-password-is-missing-Chrome/test-finished-4.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-d-48fd5-or-when-password-is-missing-Chrome\test-finished-5.png]]
+[[ATTACHMENT|login-Login-Tests-should-d-48fd5-or-when-password-is-missing-Chrome/test-finished-3.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-d-48fd5-or-when-password-is-missing-Chrome\test-finished-3.png]]
+[[ATTACHMENT|login-Login-Tests-should-d-48fd5-or-when-password-is-missing-Chrome/test-finished-5.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Login Tests › should allow dismissing error message" classname="login.spec.js" time="4.664">
+<testcase name="Login Tests › should allow dismissing error message" classname="login.spec.js" time="2.139">
 <system-out>
-<![CDATA[📸 Screenshot saved: screenshots\login-error-before-dismiss.png
-📸 Screenshot saved: screenshots\login-error-after-dismiss.png
+<![CDATA[📸 Screenshot saved: screenshots/login-error-before-dismiss.png
+📸 Screenshot saved: screenshots/login-error-after-dismiss.png
 
-[[ATTACHMENT|login-Login-Tests-should-allow-dismissing-error-message-Chrome\test-finished-2.png]]
+[[ATTACHMENT|login-Login-Tests-should-allow-dismissing-error-message-Chrome/test-finished-1.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-allow-dismissing-error-message-Chrome\test-finished-5.png]]
+[[ATTACHMENT|login-Login-Tests-should-allow-dismissing-error-message-Chrome/test-finished-2.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-allow-dismissing-error-message-Chrome\test-finished-3.png]]
+[[ATTACHMENT|login-Login-Tests-should-allow-dismissing-error-message-Chrome/test-finished-6.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-allow-dismissing-error-message-Chrome\test-finished-4.png]]
+[[ATTACHMENT|login-Login-Tests-should-allow-dismissing-error-message-Chrome/test-finished-4.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-allow-dismissing-error-message-Chrome\test-finished-1.png]]
+[[ATTACHMENT|login-Login-Tests-should-allow-dismissing-error-message-Chrome/test-finished-3.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-allow-dismissing-error-message-Chrome\test-finished-6.png]]
+[[ATTACHMENT|login-Login-Tests-should-allow-dismissing-error-message-Chrome/test-finished-5.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Login Tests › should successfully logout after login" classname="login.spec.js" time="7.915">
+<testcase name="Login Tests › should successfully logout after login" classname="login.spec.js" time="2.832">
 <system-out>
-<![CDATA[📸 Screenshot saved: screenshots\before-logout.png
-📸 Screenshot saved: screenshots\after-logout.png
+<![CDATA[📸 Screenshot saved: screenshots/before-logout.png
+📸 Screenshot saved: screenshots/after-logout.png
 
-[[ATTACHMENT|login-Login-Tests-should-successfully-logout-after-login-Chrome\test-finished-7.png]]
+[[ATTACHMENT|login-Login-Tests-should-successfully-logout-after-login-Chrome/test-finished-3.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-successfully-logout-after-login-Chrome\test-finished-5.png]]
+[[ATTACHMENT|login-Login-Tests-should-successfully-logout-after-login-Chrome/test-finished-2.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-successfully-logout-after-login-Chrome\test-finished-1.png]]
+[[ATTACHMENT|login-Login-Tests-should-successfully-logout-after-login-Chrome/test-finished-1.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-successfully-logout-after-login-Chrome\test-finished-3.png]]
+[[ATTACHMENT|login-Login-Tests-should-successfully-logout-after-login-Chrome/test-finished-4.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-successfully-logout-after-login-Chrome\test-finished-4.png]]
+[[ATTACHMENT|login-Login-Tests-should-successfully-logout-after-login-Chrome/test-finished-7.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-successfully-logout-after-login-Chrome\test-finished-6.png]]
+[[ATTACHMENT|login-Login-Tests-should-successfully-logout-after-login-Chrome/test-finished-5.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-successfully-logout-after-login-Chrome\test-finished-2.png]]
+[[ATTACHMENT|login-Login-Tests-should-successfully-logout-after-login-Chrome/test-finished-6.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Login Tests › should handle problem user login" classname="login.spec.js" time="4.655">
+<testcase name="Login Tests › should handle problem user login" classname="login.spec.js" time="1.869">
 <system-out>
-<![CDATA[📸 Screenshot saved: screenshots\login-problem-user.png
+<![CDATA[📸 Screenshot saved: screenshots/login-problem-user.png
 
-[[ATTACHMENT|login-Login-Tests-should-handle-problem-user-login-Chrome\test-finished-4.png]]
+[[ATTACHMENT|login-Login-Tests-should-handle-problem-user-login-Chrome/test-finished-1.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-handle-problem-user-login-Chrome\test-finished-2.png]]
+[[ATTACHMENT|login-Login-Tests-should-handle-problem-user-login-Chrome/test-finished-4.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-handle-problem-user-login-Chrome\test-finished-1.png]]
+[[ATTACHMENT|login-Login-Tests-should-handle-problem-user-login-Chrome/test-finished-2.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-handle-problem-user-login-Chrome\test-finished-3.png]]
+[[ATTACHMENT|login-Login-Tests-should-handle-problem-user-login-Chrome/test-finished-5.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-handle-problem-user-login-Chrome\test-finished-6.png]]
+[[ATTACHMENT|login-Login-Tests-should-handle-problem-user-login-Chrome/test-finished-3.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-handle-problem-user-login-Chrome\test-finished-5.png]]
+[[ATTACHMENT|login-Login-Tests-should-handle-problem-user-login-Chrome/test-finished-8.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-handle-problem-user-login-Chrome\test-finished-7.png]]
+[[ATTACHMENT|login-Login-Tests-should-handle-problem-user-login-Chrome/test-finished-7.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-handle-problem-user-login-Chrome\test-finished-8.png]]
+[[ATTACHMENT|login-Login-Tests-should-handle-problem-user-login-Chrome/test-finished-6.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Login Tests › should clear input fields on page reload" classname="login.spec.js" time="2.969">
+<testcase name="Login Tests › should clear input fields on page reload" classname="login.spec.js" time="1.802">
 <system-out>
-<![CDATA[📸 Screenshot saved: screenshots\before-page-reload.png
-📸 Screenshot saved: screenshots\after-page-reload-cleared.png
+<![CDATA[📸 Screenshot saved: screenshots/before-page-reload.png
+📸 Screenshot saved: screenshots/after-page-reload-cleared.png
 
-[[ATTACHMENT|login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome\test-finished-2.png]]
+[[ATTACHMENT|login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome/test-finished-2.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome\test-finished-9.png]]
+[[ATTACHMENT|login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome/test-finished-1.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome\test-finished-5.png]]
+[[ATTACHMENT|login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome/test-finished-4.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome\test-finished-1.png]]
+[[ATTACHMENT|login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome/test-finished-5.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome\test-finished-3.png]]
+[[ATTACHMENT|login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome/test-finished-6.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome\test-finished-4.png]]
+[[ATTACHMENT|login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome/test-finished-7.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome\test-finished-6.png]]
+[[ATTACHMENT|login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome/test-finished-9.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome\test-finished-8.png]]
+[[ATTACHMENT|login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome/test-finished-3.png]]
 
-[[ATTACHMENT|login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome\test-finished-7.png]]
+[[ATTACHMENT|login-Login-Tests-should-clear-input-fields-on-page-reload-Chrome/test-finished-8.png]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="product-filter.spec.js" timestamp="2026-01-15T19:13:58.315Z" hostname="Chrome" tests="6" failures="0" skipped="0" time="6.658" errors="0">
-<testcase name="Product Filtering Tests › should display default filter as Name A to Z" classname="product-filter.spec.js" time="0.26">
+<testsuite name="product-filter.spec.js" timestamp="2026-01-15T21:39:55.013Z" hostname="Chrome" tests="6" failures="0" skipped="0" time="4.269" errors="0">
+<testcase name="Product Filtering Tests › should display default filter as Name A to Z" classname="product-filter.spec.js" time="0.133">
 <system-out>
 <![CDATA[Connexion avec l'utilisateur standard...
 ✅ Connexion réussie
 ✅ Filtre par défaut vérifié: Name (A to Z)
-📸 Screenshot saved: screenshots\default-filter-name-a-to-z.png
+📸 Screenshot saved: screenshots/default-filter-name-a-to-z.png
 
-[[ATTACHMENT|product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome\test-finished-3.png]]
+[[ATTACHMENT|product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome/test-finished-3.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome\test-finished-1.png]]
+[[ATTACHMENT|product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome/test-finished-5.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome\test-finished-2.png]]
+[[ATTACHMENT|product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome/test-finished-1.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome\test-finished-5.png]]
+[[ATTACHMENT|product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome/test-finished-2.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome\test-finished-6.png]]
+[[ATTACHMENT|product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome/test-finished-4.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome\test-finished-4.png]]
+[[ATTACHMENT|product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome/test-finished-7.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome\test-finished-7.png]]
+[[ATTACHMENT|product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome/test-finished-6.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome\test-finished-10.png]]
+[[ATTACHMENT|product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome/test-finished-9.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome\test-finished-8.png]]
+[[ATTACHMENT|product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome/test-finished-8.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome\test-finished-9.png]]
+[[ATTACHMENT|product-filter-Product-Fil-b606f-fault-filter-as-Name-A-to-Z-Chrome/test-finished-10.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Product Filtering Tests › should sort products by price from low to high" classname="product-filter.spec.js" time="1.255">
+<testcase name="Product Filtering Tests › should sort products by price from low to high" classname="product-filter.spec.js" time="0.812">
 <system-out>
 <![CDATA[✅ Filtre changé à: Price (low to high)
 ✅ Produits triés par prix croissant vérifiés
-📸 Screenshot saved: screenshots\price-low-to-high.png
+📸 Screenshot saved: screenshots/price-low-to-high.png
 
-[[ATTACHMENT|product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome\test-finished-1.png]]
+[[ATTACHMENT|product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome/test-finished-1.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome\test-finished-4.png]]
+[[ATTACHMENT|product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome/test-finished-9.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome\test-finished-2.png]]
+[[ATTACHMENT|product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome/test-finished-3.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome\test-finished-5.png]]
+[[ATTACHMENT|product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome/test-finished-4.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome\test-finished-9.png]]
+[[ATTACHMENT|product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome/test-finished-2.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome\test-finished-10.png]]
+[[ATTACHMENT|product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome/test-finished-5.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome\test-finished-3.png]]
+[[ATTACHMENT|product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome/test-finished-6.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome\test-finished-7.png]]
+[[ATTACHMENT|product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome/test-finished-8.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome\test-finished-8.png]]
+[[ATTACHMENT|product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome/test-finished-10.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome\test-finished-6.png]]
+[[ATTACHMENT|product-filter-Product-Fil-e085b-s-by-price-from-low-to-high-Chrome/test-finished-7.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Product Filtering Tests › should sort products by price from high to low" classname="product-filter.spec.js" time="1.286">
+<testcase name="Product Filtering Tests › should sort products by price from high to low" classname="product-filter.spec.js" time="0.889">
 <system-out>
 <![CDATA[✅ Filtre changé à: Price (high to low)
 ✅ Premier produit a le prix le plus élevé: $49.99
 ✅ Dernier produit a le prix le plus bas: $7.99
-📸 Screenshot saved: screenshots\price-high-to-low.png
+📸 Screenshot saved: screenshots/price-high-to-low.png
 
-[[ATTACHMENT|product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome\test-finished-3.png]]
+[[ATTACHMENT|product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome/test-finished-1.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome\test-finished-2.png]]
+[[ATTACHMENT|product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome/test-finished-2.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome\test-finished-1.png]]
+[[ATTACHMENT|product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome/test-finished-3.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome\test-finished-5.png]]
+[[ATTACHMENT|product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome/test-finished-4.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome\test-finished-4.png]]
+[[ATTACHMENT|product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome/test-finished-10.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome\test-finished-7.png]]
+[[ATTACHMENT|product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome/test-finished-5.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome\test-finished-10.png]]
+[[ATTACHMENT|product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome/test-finished-6.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome\test-finished-6.png]]
+[[ATTACHMENT|product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome/test-finished-7.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome\test-finished-9.png]]
+[[ATTACHMENT|product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome/test-finished-9.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome\test-finished-8.png]]
+[[ATTACHMENT|product-filter-Product-Fil-0ca15-s-by-price-from-high-to-low-Chrome/test-finished-8.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Product Filtering Tests › should sort products alphabetically A to Z" classname="product-filter.spec.js" time="1.231">
+<testcase name="Product Filtering Tests › should sort products alphabetically A to Z" classname="product-filter.spec.js" time="0.801">
 <system-out>
 <![CDATA[✅ Tri alphabétique A à Z vérifié
-📸 Screenshot saved: screenshots\sort-name-a-to-z.png
+📸 Screenshot saved: screenshots/sort-name-a-to-z.png
 
-[[ATTACHMENT|product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome\test-finished-3.png]]
+[[ATTACHMENT|product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome/test-finished-2.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome\test-finished-4.png]]
+[[ATTACHMENT|product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome/test-finished-3.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome\test-finished-1.png]]
+[[ATTACHMENT|product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome/test-finished-4.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome\test-finished-5.png]]
+[[ATTACHMENT|product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome/test-finished-1.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome\test-finished-2.png]]
+[[ATTACHMENT|product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome/test-finished-10.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome\test-finished-6.png]]
+[[ATTACHMENT|product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome/test-finished-9.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome\test-finished-7.png]]
+[[ATTACHMENT|product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome/test-finished-5.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome\test-finished-8.png]]
+[[ATTACHMENT|product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome/test-finished-7.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome\test-finished-9.png]]
+[[ATTACHMENT|product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome/test-finished-6.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome\test-finished-10.png]]
+[[ATTACHMENT|product-filter-Product-Fil-466f3-ducts-alphabetically-A-to-Z-Chrome/test-finished-8.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Product Filtering Tests › should sort products alphabetically Z to A" classname="product-filter.spec.js" time="1.294">
+<testcase name="Product Filtering Tests › should sort products alphabetically Z to A" classname="product-filter.spec.js" time="0.791">
 <system-out>
 <![CDATA[✅ Tri alphabétique Z à A vérifié
-📸 Screenshot saved: screenshots\sort-name-z-to-a.png
+📸 Screenshot saved: screenshots/sort-name-z-to-a.png
 
-[[ATTACHMENT|product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome\test-finished-1.png]]
+[[ATTACHMENT|product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome/test-finished-2.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome\test-finished-2.png]]
+[[ATTACHMENT|product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome/test-finished-3.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome\test-finished-4.png]]
+[[ATTACHMENT|product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome/test-finished-4.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome\test-finished-3.png]]
+[[ATTACHMENT|product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome/test-finished-1.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome\test-finished-7.png]]
+[[ATTACHMENT|product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome/test-finished-5.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome\test-finished-5.png]]
+[[ATTACHMENT|product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome/test-finished-6.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome\test-finished-9.png]]
+[[ATTACHMENT|product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome/test-finished-7.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome\test-finished-10.png]]
+[[ATTACHMENT|product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome/test-finished-8.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome\test-finished-6.png]]
+[[ATTACHMENT|product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome/test-finished-9.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome\test-finished-8.png]]
+[[ATTACHMENT|product-filter-Product-Fil-5e660-ducts-alphabetically-Z-to-A-Chrome/test-finished-10.png]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Product Filtering Tests › should maintain filter after adding product to cart" classname="product-filter.spec.js" time="1.332">
+<testcase name="Product Filtering Tests › should maintain filter after adding product to cart" classname="product-filter.spec.js" time="0.843">
 <system-out>
 <![CDATA[✅ Produit ajouté au panier
 ✅ Filtre maintenu après ajout au panier
-📸 Screenshot saved: screenshots\maintain-filter-after-add-to-cart.png
+📸 Screenshot saved: screenshots/maintain-filter-after-add-to-cart.png
 
-[[ATTACHMENT|product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome\test-finished-2.png]]
+[[ATTACHMENT|product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome/test-finished-2.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome\test-finished-3.png]]
+[[ATTACHMENT|product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome/test-finished-1.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome\test-finished-1.png]]
+[[ATTACHMENT|product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome/test-finished-10.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome\test-finished-6.png]]
+[[ATTACHMENT|product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome/test-finished-3.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome\test-finished-10.png]]
+[[ATTACHMENT|product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome/test-finished-5.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome\test-finished-5.png]]
+[[ATTACHMENT|product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome/test-finished-4.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome\test-finished-4.png]]
+[[ATTACHMENT|product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome/test-finished-8.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome\test-finished-8.png]]
+[[ATTACHMENT|product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome/test-finished-6.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome\test-finished-7.png]]
+[[ATTACHMENT|product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome/test-finished-7.png]]
 
-[[ATTACHMENT|product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome\test-finished-9.png]]
+[[ATTACHMENT|product-filter-Product-Fil-0a46b-fter-adding-product-to-cart-Chrome/test-finished-9.png]]
 ]]>
 </system-out>
 </testcase>

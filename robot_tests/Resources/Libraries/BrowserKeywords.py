@@ -31,7 +31,6 @@ class BrowserKeywords:
         if not self.driver:
             options = webdriver.ChromeOptions()
 
-            # 🔥 REQUIRED FOR DOCKER
             options.binary_location = "/usr/bin/chromium"
             options.add_argument("--headless=new")
             options.add_argument("--no-sandbox")
