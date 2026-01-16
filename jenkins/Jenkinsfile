@@ -26,7 +26,7 @@ pipeline {
             }
         }
 
-       /*  stage('Run Robot Framework tests') {
+        stage('Run Robot Framework tests') {
             steps {
                 catchError(buildResult: 'UNSTABLE', stageResult: 'UNSTABLE') {
                     sh '''
@@ -49,7 +49,7 @@ pipeline {
                     '''
                 }
             }
-        } */
+        } 
 
         stage('Run Selenium Python tests') {
             steps {
