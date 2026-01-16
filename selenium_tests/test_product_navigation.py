@@ -80,18 +80,22 @@ def test_modular_product_workflow(logged_in_driver, product_case):
     print(f"✅ UI elements verified for product: {product_case['name']}")
 
     # ============================
-    # PHASE 3: NAVIGATION & DETAIL
+    # PHASE 3: NAVIGATION & DETAIL (REWRITTEN)
     # ============================
+
+    # Attempt to click the product (use JS click fallback)
     clicked = click_product_by_name(driver, product_case["name"])
     assert clicked, f"Failed to click product: {product_case['name']}"
 
-    time.sleep(CONFIG["timeouts"]["long_sleep"])
+    # Wait for the detail page to load (up to 10s)
+    try:
+        WebDriverWait(driver, 10).until(
+            lambda d: any(pattern in d.current_url for pattern in PAGE_PATTERNS["product_detail_page"])
+        )
+    except Exception:
+        take_screenshot(driver, f"product_{product_case['key']}_NAV_FAIL", "FAIL")
+        raise AssertionError(f"Not on product detail page after click: {product_case['name']} (current URL: {driver.current_url})")
 
-    is_detail_page = any(
-        pattern in driver.current_url 
-        for pattern in PAGE_PATTERNS["product_detail_page"]
-    )
-    assert is_detail_page, f"Not on product detail page: {product_case['name']}"
     print(f"✅ Navigated to detail page for: {product_case['name']}")
 
     # Verify product details
@@ -105,10 +109,8 @@ def test_modular_product_workflow(logged_in_driver, product_case):
 
     take_screenshot(driver, f"product_{product_case['key']}", "PASS")
 
-    # Return to inventory
+    # Return to inventory page
     back_success = go_back_to_products(driver)
     assert back_success and is_on_inventory_page(driver), \
         f"Failed to return to inventory page from product: {product_case['name']}"
     print(f"✅ Returned to inventory page successfully")
-
-    print(f"✅ TEST COMPLETE: {product_case['name']}")
