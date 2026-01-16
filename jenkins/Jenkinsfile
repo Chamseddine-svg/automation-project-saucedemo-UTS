@@ -16,7 +16,7 @@ pipeline {
             }
         }
 
-        stage('Build Docker images') {
+      /*   stage('Build Docker images') {
             steps {
                 sh '''
                 docker build -t $ROBOT_IMAGE robot_tests
@@ -38,7 +38,7 @@ pipeline {
                     '''
                 }
             }
-        }
+        } */
         stage('Run Playwright tests') {
             steps {
                 catchError(buildResult: 'UNSTABLE', stageResult: 'UNSTABLE') {
