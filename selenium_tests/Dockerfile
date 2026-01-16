@@ -41,4 +41,4 @@ RUN /bin/bash -c "source /tests/venv/bin/activate && pip install --upgrade pip &
 COPY . .
 
 # ---- Default command: activate venv and run pytest ----
-CMD ["/bin/bash", "-c", "source /tests/venv/bin/activate && pytest -v"]
+CMD ["/bin/bash", "-c", "source /tests/venv/bin/activate && pytest -v -s --html=reports/login_report.html --self-contained-html selenium_tests/"]

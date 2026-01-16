@@ -55,11 +55,14 @@ pipeline {
             steps {
                 catchError(buildResult: 'UNSTABLE', stageResult: 'UNSTABLE') {
                     sh '''
-                    docker run --rm $SELENIUM_IMAGE
+                    mkdir -p selenium_tests/reports
+                    docker run --rm -v $(pwd)/selenium_tests/reports:/tests/reports $SELENIUM_IMAGE \
+                    pytest -v -s /tests --html=/tests/reports/report.html --self-contained-html
                     '''
                 }
             }
         }
+
 
 
     }
@@ -84,14 +87,15 @@ pipeline {
                 reportName: 'Playwright Report'
             ])
 
-           /*  publishHTML([
+           publishHTML([
                 allowMissing: true,
                 alwaysLinkToLastBuild: true,
                 keepAll: true,
                 reportDir: 'selenium_tests/reports',
                 reportFiles: 'report.html',
                 reportName: 'Selenium Python Report'
-            ]) */
+            ])
+
         }
     }
 }
